@@ -1,0 +1,22 @@
+# Cloned corpus repositories are working copies, not sprint deliverables.
+/repos/
+
+# Confidential literature sources.
+*.pdf
+/articulos/
+/literatura/
+
+# Generated cache and build output.
+/target/
+
+# Operating system files.
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files and logs.
+*.tmp
+*.log
+*~
+.~lock.*
