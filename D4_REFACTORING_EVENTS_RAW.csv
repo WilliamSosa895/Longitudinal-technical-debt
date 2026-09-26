@@ -1,0 +1,94 @@
+event_id,commit,timestamp,refactoring_type,file_before,file_after
+E001,71c905200,24/09/2025,Split Method,src/test/java/org/apache/commons/lang3/compare/ObjectToStringComparatorTest.java,src/test/java/org/apache/commons/lang3/compare/ObjectToStringComparatorTest.java
+E002,71c905200,24/09/2025,Extract Variable,src/test/java/org/apache/commons/lang3/compare/ObjectToStringComparatorTest.java,src/test/java/org/apache/commons/lang3/compare/ObjectToStringComparatorTest.java
+E003,71c905200,24/09/2025,Extract Variable,src/test/java/org/apache/commons/lang3/compare/ObjectToStringComparatorTest.java,src/test/java/org/apache/commons/lang3/compare/ObjectToStringComparatorTest.java
+E004,71c905200,24/09/2025,Extract Variable,src/test/java/org/apache/commons/lang3/compare/ObjectToStringComparatorTest.java,src/test/java/org/apache/commons/lang3/compare/ObjectToStringComparatorTest.java
+E005,6513eb0bb,29/09/2025,Invert Condition,src/main/java/org/apache/commons/lang3/EnumUtils.java,src/main/java/org/apache/commons/lang3/EnumUtils.java
+E006,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E007,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E008,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E009,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E010,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E011,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E012,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E013,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E014,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E015,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E016,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E017,800f16d63,29/09/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java,src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+E018,04cc0339d,05/10/2025,Extract Method,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E019,04cc0339d,05/10/2025,Extract Method,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E020,04cc0339d,05/10/2025,Extract Method,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E021,04cc0339d,05/10/2025,Extract Method,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E022,939150606,05/10/2025,Extract Method,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E023,939150606,05/10/2025,Extract Method,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E024,939150606,05/10/2025,Extract Method,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E025,939150606,05/10/2025,Extract Method,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E026,939150606,05/10/2025,Invert Condition,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E027,939150606,05/10/2025,Invert Condition,src/main/java/org/apache/commons/lang3/LocaleUtils.java,src/main/java/org/apache/commons/lang3/LocaleUtils.java
+E028,7cb24c310,05/10/2025,Rename Method,src/test/java/org/apache/commons/lang3/LocaleUtilsTest.java,src/test/java/org/apache/commons/lang3/LocaleUtilsTest.java
+E029,7cb24c310,05/10/2025,Rename Method,src/test/java/org/apache/commons/lang3/LocaleUtilsTest.java,src/test/java/org/apache/commons/lang3/LocaleUtilsTest.java
+E030,df3e2715f,14/10/2025,Extract Method,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java
+E031,df3e2715f,14/10/2025,Rename Variable,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java
+E032,df3e2715f,14/10/2025,Extract And Move Method,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java
+E033,df3e2715f,14/10/2025,Extract And Move Method,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java
+E034,df3e2715f,14/10/2025,Extract And Move Method,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java
+E035,cc5ecf5db,14/10/2025,Add Method Annotation,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java
+E036,cc5ecf5db,14/10/2025,Add Method Annotation,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java,src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java
+E037,7b77ea4cf,25/10/2025,Inline Variable,src/main/java/org/apache/commons/lang3/time/AbstractFormatCache.java,src/main/java/org/apache/commons/lang3/time/AbstractFormatCache.java
+E038,3939c0a79,26/10/2025,Extract Variable,src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java,src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
+E039,3939c0a79,26/10/2025,Add Parameter Modifier,src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java,src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
+E040,c9ff6aa44,07/11/2025,Extract Method,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,src/main/java/org/apache/commons/lang3/time/FastDateParser.java
+E041,c9ff6aa44,07/11/2025,Extract Method,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,src/main/java/org/apache/commons/lang3/time/FastDateParser.java
+E042,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateParserTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E043,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateParserTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E044,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateParserTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E045,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateParserTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E046,c9ff6aa44,07/11/2025,Extract And Move Method,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E047,c9ff6aa44,07/11/2025,Extract And Move Method,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E048,c9ff6aa44,07/11/2025,Parameterize Variable,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E049,c9ff6aa44,07/11/2025,Parameterize Variable,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E050,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastTimeZoneTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E051,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E052,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E053,c9ff6aa44,07/11/2025,Rename Parameter,src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E054,c9ff6aa44,07/11/2025,Rename Parameter,src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E055,c9ff6aa44,07/11/2025,Rename Parameter,src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E056,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E057,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E058,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E059,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E060,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E061,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E062,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E063,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E064,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E065,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E066,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E067,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E068,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E069,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E070,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E071,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E072,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E073,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E074,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E075,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/DurationFormatUtilsTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E076,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E077,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E078,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E079,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E080,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E081,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E082,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E083,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E084,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E085,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E086,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E087,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateFormatTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E088,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateParser_TimeZoneStrategyTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E089,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDateParser_TimeZoneStrategyTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E090,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDatePrinterTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E091,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDatePrinterTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E092,c9ff6aa44,07/11/2025,Extract And Move Method,src/test/java/org/apache/commons/lang3/time/FastDatePrinterTimeZonesTest.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
+E093,c9ff6aa44,07/11/2025,Extract And Move Method,src/main/java/org/apache/commons/lang3/time/FastTimeZone.java,src/main/java/org/apache/commons/lang3/time/TimeZones.java
