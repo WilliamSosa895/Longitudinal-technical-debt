@@ -54,7 +54,7 @@ por fecha o por commit.
    repositorio, con su comando de ejecución documentado.
 5. **Control de versiones.** Todo el avance está en el repositorio privado
    `github.com/WilliamSosa895/Longitudinal-technical-debt`, con el tag `sprint1-g1a` que marca este
-   estado exacto (commit `414b97c5…`).
+   estado exacto (commit `064687a5…`).
 
 ---
 
