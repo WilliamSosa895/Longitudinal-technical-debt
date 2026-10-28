@@ -1,27 +1,30 @@
-# Sprint 1 — Baseline longitudinal y evolución del estudio CIMPS
-## README — Documentación del proceso
+# Estudio longitudinal de Deuda Técnica (continuidad CIMPS)
+## README — Documentación del proceso (Sprint 1 + Sprint 2)
 
 **Estudiante:** William Tehuatle Sosa
 **Proyecto:** Gestión de la Deuda Técnica — línea de investigación **Ruta B**
 (archivos que concentran cambios / hotspots y contexto de commits, issues y pull requests)
+**Repositorio:** github.com/WilliamSosa895/Longitudinal-technical-debt
 
 ---
 
-## 1. Objetivo del sprint y pregunta rectora
+## 1. Objetivo del proyecto y pregunta rectora
 
-Este sprint da continuidad al artículo enviado a CIMPS 2026, que analizó la deuda técnica de código
+Este proyecto da continuidad al artículo enviado a CIMPS 2026, que analizó la deuda técnica de código
 en ocho proyectos Java de código abierto **en un único momento** (un *snapshot* por proyecto). El
-objetivo de esta etapa **no** es entrenar modelos ni demostrar priorización, sino comprobar la
-**factibilidad** de un estudio longitudinal:
+objetivo de esta fase **no** es entrenar modelos ni demostrar priorización, sino comprobar la
+**factibilidad** de un estudio longitudinal y dejar validada la base temporal.
 
-> **Pregunta rectora:** ¿Podemos reconstruir de manera trazable la evolución de los proyectos usados
-> en CIMPS, seguir los archivos a través del tiempo e identificar eventos posteriores que permitan
-> preparar un nuevo estudio experimental **sin utilizar información del futuro**?
+> **Pregunta rectora (Sprint 1):** ¿Podemos reconstruir de manera trazable la evolución de los
+> proyectos usados en CIMPS, seguir los archivos a través del tiempo e identificar eventos posteriores
+> que permitan preparar un nuevo estudio experimental **sin utilizar información del futuro**?
 
-El sprint se considera exitoso cuando hay evidencia para responder tres preguntas: (1) ¿podemos
-seguir archivos de forma confiable a través del tiempo?, (2) ¿podemos obtener información histórica
-sin usar datos futuros?, y (3) ¿los repositorios ofrecen trazabilidad suficiente para diseñar el
-siguiente experimento?
+> **Pregunta rectora (Sprint 2):** ¿Podemos construir, para un mismo archivo y momento temporal,
+> métricas estáticas (E1), información histórica (E2) y evidencia de co-change (E3) utilizando
+> únicamente información disponible hasta ese momento?
+
+El Sprint 1 cubre la línea longitudinal (E2). El Sprint 2 la cierra y valida (auditoría, snapshots,
+separación temporal) e inicia la integración con las familias E1 y E3.
 
 ---
 
@@ -32,13 +35,13 @@ siguiente experimento?
 | Sistema operativo | Windows 10 (build 26200) — terminal Git Bash / MINGW64 |
 | Versión de Git | git 2.52.0.windows.1 |
 | Versión de Java | OpenJDK 17.0.17 (Temurin-17.0.17+10) |
-| Versión de Python | 3.8.10 (no utilizado; los scripts se ejecutaron en Bash) |
-| Versión de RefactoringMiner | Pendiente — se instala en D4 |
+| Versión de RefactoringMiner | commit `88a299a43`, construido con `./gradlew installDist` |
 | Repositorios analizados | Los 8 del corpus CIMPS (ver §4) |
 | Proyecto piloto | `apache/commons-lang`, rama `master` |
 | Commit de referencia CIMPS (commons-lang) | `rel/commons-lang-3.20.0` → `598dfc163b8b` (2025-11-12) |
 | decision_time (D3) | 2025-11-12 (fecha del snapshot CIMPS) |
-| Fechas de ejecución | 2026-09-15 a 2026-09-21 |
+| Fechas de ejecución Sprint 1 | 2026-09-15 a 2026-09-27 |
+| Fechas de ejecución Sprint 2 | 2026-10-14 |
 
 **Nota sobre el commit de referencia:** el inventario y las prácticas se realizaron sobre el
 repositorio en su rama `master` (historia completa). El commit exacto que analizó CIMPS
@@ -49,13 +52,26 @@ información anterior a esa fecha.
 
 ## 3. Estado de los entregables
 
+### Sprint 1 — línea longitudinal (completo)
+
 | Entregable | Descripción | Estado |
 |---|---|---|
-| D1 | Revisión de literatura (CIMPS, Carvalho 2026, Tsoukalas 2024) | **En curso** — CIMPS y Carvalho revisados; falta Tsoukalas y la matriz formal |
-| D2 | Inventario de observabilidad de los 8 proyectos | **Completo** — 8/8 inspeccionados con evidencia (`D2_CIMPS8_OBSERVABILIDAD.csv`) |
-| D3 | Identidad de artefactos + dataset de evolución | **Completo** — 10 archivos con identidad, 30 con métricas, verificación de 3 casos, análisis documentado |
-| D4 | RefactoringMiner + control de fuga temporal | **Pendiente** |
-| D5 | Plan de evolución CIMPS → estudio longitudinal | **Pendiente** |
+| D1 | Revisión de literatura (CIMPS, Carvalho 2026, Tsoukalas 2024) + matriz y gap | **Completo** — `D1_Estado_Arte_Gap.docx` |
+| D2 | Inventario de observabilidad de los 8 proyectos | **Completo** — `D2_CIMPS8_OBSERVABILIDAD.csv` (8/8) |
+| D3 | Identidad de artefactos + dataset de evolución | **Completo** — 10 archivos con identidad, 30 con métricas |
+| D4 | RefactoringMiner + control de fuga temporal | **Completo** — 93 refactorings, 30 auditados, leakage ledger |
+| D5 | Plan de evolución / autoevaluación G1A | **Completo** — `Autoevaluacion_G1A.docx` (PASS CANDIDATE) |
+
+### Sprint 2 — validación y separación temporal (en curso)
+
+| Actividad | Descripción | Estado |
+|---|---|---|
+| Auditoría | ≥10 registros del dataset verificados contra Git | **Completo** — `D3_AUDITORIA_RESULTADO.csv` (12/12) |
+| Snapshots temporales | ≥3 observaciones en formato de 5 campos | **Completo** — `D3_SNAPSHOTS_TEMPORALES_OBS.csv` |
+| Separación temporal | Folds walk-forward materializados (sin split aleatorio) | **Completo** — `D3_FOLD_TRAIN.csv` / `D3_FOLD_TEST.csv` |
+| Lectura Robredo (2025) | Extracción de método time-dependent | **Completo** |
+| Consolidación G1A | Cierre y actualización de evidencias | **En curso** |
+| Integración E1+E2+E3 | Tabla conjunta con la línea hotspot/co-change (Yatana) | **Pendiente** |
 
 ---
 
@@ -150,13 +166,13 @@ src/main/java/org/apache/commons/lang3/StringUtils.java   (ubicación actual)
 ```
 
 La identidad se sostiene en dos evidencias independientes: el `R100` (100 % de similitud) y el
-mensaje de commit (que además cita el ticket JIRA **LANG-563**). Cadena **archivo -> commit ->
-movimiento -> ticket JIRA**, rastreable hasta el issue tracker.
+mensaje de commit (que además cita el ticket JIRA **LANG-563**). Cadena **archivo → commit →
+movimiento → ticket JIRA**, rastreable hasta el issue tracker.
 
-**Hallazgo:** la fecha de nacimiento predice la complejidad de identidad. Los 5 archivos anteriores a
-2010 vivieron dos migraciones de proyecto (paquete `lang->lang3` y layout `src/java->src/main/java`);
-los 4 archivos nacidos después no tienen ningún rename. Esos dos moves **no son actividad de cada
-archivo, sino eventos globales del proyecto** que arrastraron a todos los archivos vivos a la vez.
+**Hallazgo:** la fecha de nacimiento predice la complejidad de identidad. Los archivos anteriores a
+2010 vivieron dos migraciones de proyecto (paquete `lang→lang3` y layout `src/java→src/main/java`);
+los nacidos después no tienen ningún rename. Esos dos moves **no son actividad de cada archivo, sino
+eventos globales del proyecto** que arrastraron a todos los archivos vivos a la vez.
 
 ### 6.2 Dataset de evolución (`D3_EVOLUTION_DATASET.csv`)
 
@@ -169,9 +185,12 @@ métricas usando exclusivamente información anterior al `decision_time` (2025-1
 `--before="2025-11-12"`; ningún dato proviene de commits posteriores. Generado por
 `scripts/build_evolution_dataset.sh` (reproducible desde el repo + commit).
 
-### 6.3 Verificación manual (criterio de aceptación)
+### 6.3 Verificación / auditoría (criterio de aceptación)
 
-Se comprobaron 3 archivos (uno por estrato) contra el historial de Git; los tres coinciden:
+En el Sprint 1 se verificaron 3 casos (uno por estrato). En el **Sprint 2 la auditoría se amplió a 12
+registros** contra Git, confirmando las seis dimensiones (identidad, commit/fecha, cambios previos,
+churn, colaboradores y ausencia de información posterior). Resultado: **12/12 coinciden**
+(`D3_AUDITORIA_RESULTADO.csv`).
 
 | Archivo | Estrato | prior_commits | distinct_contributors | ¿Coincide? |
 |---|---|---|---|---|
@@ -189,7 +208,43 @@ magnitud; (2) `prior_commits` y `distinct_contributors` están casi perfectament
 
 ---
 
-## 7. Conceptos clave
+## 7. D4 — RefactoringMiner y control de fuga temporal
+
+Se ejecutó **RefactoringMiner** (`-bc`) sobre el ciclo `3.19.0 → 3.20.0` (117 commits no-merge, 0
+errores, 93 refactorings), de modo que todos los eventos son anteriores o iguales al `decision_time`.
+Se auditaron 30 eventos (estratificados por tipo) y se inspeccionaron 3 commits a fondo. Hallazgo
+central: **un refactoring detectado ≠ pago de deuda técnica** (el commit `c9ff6aa44` concentra el 58 %
+de los refactorings pero es un fix funcional para Java 25). Evidencia en `D4_Analisis_Refactorings.docx`,
+`D4_REFACTORING_EVENTS_RAW.json/.csv` y `D4_REFACTORING_AUDIT_30.csv`.
+
+El **registro de fuga temporal** (`D4_TEMPORAL_LEAKAGE.md`) define la regla
+`feature_timestamp <= decision_time`, enumera seis situaciones de fuga (L1–L6) con su regla
+preventiva, y documenta el riesgo de contaminación por eventos globales.
+
+---
+
+## 8. Sprint 2 — Snapshots temporales y separación temporal
+
+### 8.1 Snapshots temporales (`D3_SNAPSHOTS_TEMPORALES_OBS.csv`)
+
+Se definieron ≥3 observaciones archivo × tiempo con el formato de cinco campos: `proyecto +
+artifact_id + decision_time + información disponible + información reservada como futuro`. Con
+StringUtils en los cortes 3.18.0, 3.19.0 y 3.20.0 se demuestra que, al avanzar el corte, lo disponible
+crece (700→709→716 commits) y el futuro reservado encoge (69→60→53), coincidiendo en 3.20.0 con el
+dataset auditado.
+
+### 8.2 Separación temporal materializada (`D3_FOLD_TRAIN.csv`, `D3_FOLD_TEST.csv`)
+
+Se materializó el diseño walk-forward (sin split aleatorio): fold de entrenamiento con features ≤
+3.18.0 y etiqueta en (3.18.0, 3.19.0]; fold de prueba con features ≤ 3.19.0 y etiqueta en
+(3.19.0, 3.20.0]. Se verificó la invariante `max(feature_ts) ≤ T < min(label_ts)` fila por fila
+(29/29 válidas en entrenamiento, 30/30 en prueba). Se detectó y previno un caso de validez temporal
+(F020, ByteSupplier), reforzando el control con una verificación de existencia por tag
+(`git cat-file -e`).
+
+---
+
+## 9. Conceptos clave
 
 - **Snapshot vs. longitudinal:** CIMPS analizó una sola *foto*; el estudio longitudinal observa la
   *película* (varios momentos).
@@ -201,71 +256,76 @@ magnitud; (2) `prior_commits` y `distinct_contributors` están casi perfectament
   todavía no existía.
 
 **Distinciones que el proceso mantiene** (para no sobre-interpretar la evidencia):
-análisis estático != deuda técnica total · alta frecuencia de cambio != deuda · refactoring != pago
-de deuda · asociación != causalidad.
+análisis estático ≠ deuda técnica total · alta frecuencia de cambio ≠ deuda · refactoring ≠ pago
+de deuda · asociación ≠ causalidad.
 
 ---
 
-## 8. Respuesta a las tres preguntas de cierre del sprint
-
-1. **¿Podemos seguir archivos de forma confiable a través del tiempo?** **Sí.** De 10 archivos, los
-   10 fueron rastreables sin ambigüedad (`R100` en los movidos; sin rename en los nacidos después de
-   las migraciones). Cero casos ambiguos en la muestra de commons-lang (mono-módulo).
-2. **¿Podemos obtener información histórica sin usar datos futuros?** **Sí.** El dataset aplica la
-   regla temporal `--before=decision_time` en todas las métricas; reproducible desde repo + commit.
-3. **¿Hay trazabilidad suficiente para diseñar el siguiente experimento?** **Sí, con salvedades:** la
-   fuente de contexto (GitHub Issues vs. JIRA) varía por proyecto, y hay eventos globales
-   (migraciones, cambio de licencia) que deben distinguirse de la actividad individual.
-
----
-
-## 9. Amenazas a la validez identificadas (para D4 y D5)
+## 10. Amenazas a la validez identificadas
 
 1. **Churn inflado por merges:** el conteo con `--numstat` puede sumar líneas ya contadas en commits
-   de fusión. Por eso se hace verificación manual.
+   de fusión. Por eso se hace verificación manual/auditoría.
 2. **Métricas contaminadas por eventos globales:** el commit de licencia afectó a 511 archivos; un
    pipeline futuro deberá filtrar commits masivos/triviales.
-
----
-
-## 10. Qué sigue
-
-- **D4:** instalar y ejecutar RefactoringMiner sobre un rango acotado; auditar 30 eventos; redactar
-  la nota de temporal leakage (>=5 situaciones).
-- **D1:** completar la revisión de literatura (incluyendo Tsoukalas 2024) en formato de fichas.
-- **D5:** redactar el plan de evolución CIMPS -> estudio longitudinal, derivado de D1–D4.
+3. **`--follow` y sobre-atribución de identidad:** en archivos de creación reciente, `--follow` puede
+   rastrear por contenido hasta un ancestro muy antiguo (p.ej. F020 rastreado hasta el commit
+   fundacional de 2002). La verificación por tag de release acota este efecto.
 
 ---
 
 ## 11. Estructura de archivos de la entrega
 
 ```
-WILLIAM_SPRINT_01/
-├── README.md                        (este archivo)
-├── D2_CIMPS8_OBSERVABILIDAD.csv     (inventario de los 8 proyectos — completo)
-├── D3_ARTIFACT_IDENTITY.csv         (identidad de 10 archivos — 22 eventos)
-├── D3_EVOLUTION_DATASET.csv         (30 archivos x 6 métricas)
-├── D3_SELECCION_30.txt              (lista de los 30 archivos del dataset)
-├── D3_Analisis_Evolucion.docx       (análisis de los hallazgos)
-├── D1_REVISION_CIMPS_LITERATURA.md  (en curso)
-├── D4_REFACTORING_EVENTS_RAW.csv    (pendiente)
-├── D4_REFACTORING_AUDIT_30.csv      (pendiente)
-├── D4_TEMPORAL_LEAKAGE.md           (pendiente)
-├── D5_PLAN_EVOLUCION_CIMPS.md       (pendiente)
-├── repos/                           (los 8 repositorios clonados — área de trabajo)
+Longitudinal-technical-debt/
+├── README.md                             (este archivo)
+├── Objetivo_Investigacion.docx           (objetivo de investigación)
+├── D1_Estado_Arte_Gap.docx               (estado del arte + gap)
+├── D2_CIMPS8_OBSERVABILIDAD.csv          (inventario de los 8 proyectos)
+├── D3_ARTIFACT_IDENTITY.csv              (identidad de 10 archivos — 22 eventos)
+├── D3_EVOLUTION_DATASET.csv              (30 archivos x 6 métricas)
+├── D3_SELECCION_30.txt                   (lista de los 30 archivos)
+├── D3_Analisis_Evolucion.docx            (análisis del dataset)
+├── D4_REFACTORING_EVENTS_RAW.json/.csv   (salida cruda de RefactoringMiner)
+├── D4_REFACTORING_AUDIT_30.csv           (auditoría de 30 eventos)
+├── D4_Analisis_Refactorings.docx         (análisis de refactorings)
+├── D4_TEMPORAL_LEAKAGE.md                (registro de fuga temporal L1–L6)
+├── SNAPSHOTS_TEMPORALES.md               (manifiesto de snapshots T0–T5)
+├── D_Separacion_Temporal.docx            (diseño walk-forward)
+├── PROVENANCE_INTEGRIDAD.md              (cadena raw → output)
+├── BITACORA_ERRORES_DECISIONES.md        (bitácora de errores y decisiones)
+├── Autoevaluacion_G1A.docx               (autoevaluación Gate G1A)
+├── (Sprint 2) D3_AUDITORIA_RESULTADO.csv
+├── (Sprint 2) D3_SNAPSHOTS_TEMPORALES_OBS.csv
+├── (Sprint 2) D3_FOLD_TRAIN.csv / D3_FOLD_TEST.csv
+├── (Sprint 2) D_Auditoria_Dataset.docx
+├── (Sprint 2) D_Snapshots_Temporales.docx
+├── (Sprint 2) D_Separacion_Temporal_Materializada.docx
+├── repos/                                (repositorios clonados — área de trabajo, ignorada en git)
 └── scripts/
-    └── build_evolution_dataset.sh   (generador del dataset de evolución)
+    ├── build_evolution_dataset.sh        (generador del dataset de evolución — Sprint 1)
+    ├── audit_dataset.sh                  (auditoría de registros contra Git — Sprint 2)
+    ├── snapshots_temporales.sh           (observaciones archivo × tiempo — Sprint 2)
+    └── temporal_split.sh                 (materialización de folds walk-forward — Sprint 2)
 ```
 
 ---
 
-## 12. Reproducción del dataset de evolución (D3)
+## 12. Reproducción
 
-Desde la raíz `WILLIAM_SPRINT_01/`, en Git Bash:
+Desde la raíz del proyecto (que contiene `repos/commons-lang`), en Git Bash:
 
 ```bash
+# Dataset de evolución (D3)
 bash scripts/build_evolution_dataset.sh repos/commons-lang 2025-11-12 598dfc163b8b
-# genera D3_EVOLUTION_DATASET.csv y D3_SELECCION_30.txt dentro de repos/commons-lang/
+
+# Auditoría de registros (Sprint 2)
+bash scripts/audit_dataset.sh repos/commons-lang 2025-11-12
+
+# Snapshots temporales (Sprint 2)
+bash scripts/snapshots_temporales.sh
+
+# Separación temporal walk-forward (Sprint 2)
+bash scripts/temporal_split.sh
 ```
 
 Verificación manual de un caso (debe dar 716 y 93):
@@ -275,3 +335,11 @@ cd repos/commons-lang
 git log --oneline --before=2025-11-12 --follow -- src/main/java/org/apache/commons/lang3/StringUtils.java | wc -l
 git log --before=2025-11-12 --follow --format="%an" -- src/main/java/org/apache/commons/lang3/StringUtils.java | sort -u | wc -l
 ```
+
+---
+
+## 13. Estado del repositorio
+
+- **Tag `sprint1-g1a-v2`** → commit `064687a` (cierre propuesto del Gate G1A).
+- **Último commit Sprint 1:** `991ea46` (2026-09-27, "Cierre G1A: autoevaluacion + provenance").
+- **Sprint 2:** sus evidencias se incorporarán en un commit y tag propios al cierre del sprint.
