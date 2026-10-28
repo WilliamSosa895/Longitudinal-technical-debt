@@ -1,0 +1,4 @@
+proyecto,artifact_id,path,decision_time,disp_prior_commits,disp_churn,disp_contributors,disp_last_commit,fut_commits_reservados,fut_churn_reservado
+commons-lang,F001,src/main/java/org/apache/commons/lang3/StringUtils.java,2025-07-06,700,47595,89,"9b383f3fa 2025-06-25",69,6386
+commons-lang,F001,src/main/java/org/apache/commons/lang3/StringUtils.java,2025-09-19,709,51856,92,"c36116ae4 2025-09-01",60,2125
+commons-lang,F001,src/main/java/org/apache/commons/lang3/StringUtils.java,2025-11-12,716,52000,93,"9167659d8 2025-11-02",53,1981
