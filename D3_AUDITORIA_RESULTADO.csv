@@ -1,0 +1,13 @@
+artifact_id,path,prior_commits,lines_added,lines_deleted,churn,distinct_contributors,last_before_dt,days_since_last_change,origin_commit,origin_date,commits_after_dt_excluidos
+F001,src/main/java/org/apache/commons/lang3/StringUtils.java,716,30605,21395,52000,93,2025-11-02,10,6627f7ad8,2002-07-19,53
+F002,src/main/java/org/apache/commons/lang3/ArrayUtils.java,314,44265,34680,78945,42,2025-09-25,48,d31f3d3f8,2002-10-13,31
+F003,src/main/java/org/apache/commons/lang3/ClassUtils.java,208,5763,4138,9901,27,2025-09-18,55,f7c60dc9f,2002-08-14,19
+F007,src/main/java/org/apache/commons/lang3/SystemUtils.java,174,6607,4149,10756,23,2025-10-21,22,155943d34,2002-08-22,11
+F011,src/main/java/org/apache/commons/lang3/time/TimeZones.java,33,257,169,426,10,2025-11-07,5,6627f7ad8,2002-07-19,5
+F012,src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java,33,769,292,1061,13,2025-09-25,48,c40412197,2009-06-23,3
+F013,src/main/java/org/apache/commons/lang3/Streams.java,33,1190,632,1822,7,2025-09-25,48,2ea44b2ad,2020-01-26,5
+F018,src/main/java/org/apache/commons/lang3/function/IntToCharFunction.java,32,234,191,425,9,2025-05-20,176,6627f7ad8,2002-07-19,2
+F021,src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java,5,88,24,112,2,2025-05-20,176,5afd54ce6,2021-08-29,1
+F027,src/main/java/org/apache/commons/lang3/Charsets.java,4,72,3,75,2,2025-05-20,176,e5e1339e4,2019-06-03,2
+F029,src/main/java/org/apache/commons/lang3/AppendableJoiner.java,3,318,5,323,2,2025-08-20,84,e5aa6d084,2024-07-11,3
+F030,src/main/java/org/apache/commons/lang3/util/IterableStringTokenizer.java,2,115,1,116,2,2025-05-20,176,25f7d8517,2025-01-19,2
