@@ -30,13 +30,15 @@
 |---|---|---|---|---|---|
 | D1 | 2026-09-17 | Proyecto piloto: **commons-lang** | Cumple los 4 criterios: mono-módulo con `src/main/java` limpio, historial largo (10,278 commits), actividad reciente, tamaño manejable | `README.md` §5 | Vigente |
 | D2 | 2026-09-25 | `decision_time` = **2025-11-12** | Es la fecha del snapshot que analizó CIMPS (release 3.20.0, commit `598dfc163b8b`); asegura coherencia con el estudio original | `README.md` §2 | Vigente |
-| D3 | 2026-09-25 | Muestra **estratificada** de 30 archivos (10 hotspots + 10 medios + 10 tranquilos) | Necesidad de contraste para la Ruta B; una muestra solo de hotspots no permitiría comparar | `scripts/build_evolution_dataset.sh` | Vigente |
+| D3 | 2026-09-25 | Muestra **estratificada** de 30 archivos (10 hotspots + 10 medios + 10 tranquilos) | Necesidad de contraste para la Ruta B; una muestra solo de hotspots no permitiría comparar | `scripts/build_evolution_dataset.sh` | Vigente (ver H9: el estrato medio se vio afectado por el linaje de `--follow`) |
 | D4 | 2026-09-26 | Rango de RefactoringMiner: **3.19.0 → 3.20.0** (117 commits) | Es el ciclo que termina exactamente en el snapshot CIMPS; manejable y respeta la regla temporal | `D4_Analisis_Refactorings.docx` | Vigente |
 | D5 | 2026-09-26 | Auditoría **estratificada por tipo** (30 refactorings, cubriendo los 12 tipos) | Evitar que "Extract And Move Method" (54 % del total) domine la muestra y reste variedad | `D4_REFACTORING_AUDIT_30.csv` | Vigente |
-| D6 | 2026-09-25 | Repositorio **privado** en GitHub | Confidencialidad del artículo CIMPS, que sigue en proceso de publicación | `github.com/WilliamSosa895/Longitudinal-technical-debt` | **Revisar** (ver H8: el repo figura como público) |
+| D6 | 2026-09-25 | Repositorio **privado** en GitHub | Confidencialidad del artículo CIMPS, que sigue en proceso de publicación | `github.com/WilliamSosa895/Longitudinal-technical-debt` | **Resuelto** (2026-10-28: el repositorio se puso en privado; ver H8) |
 | D7 | 2026-10-14 | Anclar `artifact_id` al **path** como identificador canónico | La llave de integración `project + artifact_id + decision_time` requiere un id estable; los dos archivos D3 usaban numeraciones distintas (ver H6) | `D_Auditoria_Dataset.docx` §7 | Vigente |
 | D8 | 2026-10-14 | Etiqueta de separación temporal = **evento de cambio** (≥1 commit en la ventana) | Proxy reproducible con un comando de Git; la refinación con RefactoringMiner se reserva, respetando "refactoring ≠ pago de deuda" | `D_Separacion_Temporal_Materializada.docx` §2 | Vigente |
 | D9 | 2026-10-14 | Control reforzado por **tag** (`git cat-file -e`) además de la invariante por fecha | Detecta artefactos no presentes en el snapshot del corte que la invariante por fecha deja pasar (ver H7) | `D_Separacion_Temporal_Materializada.docx` §6 | Vigente |
+| D10 | 2026-10-28 | Recalcular E2 con **`git log --follow -M90%`** y **documentar ambos valores** (original y corregido), sin sustituir en silencio ni eliminar archivos | El `--follow` por defecto (umbral de similitud 50 %) asigna historia de otros archivos (ver H9); subir el umbral a 90 % corta los saltos falsos **sin perder los renames legítimos** (StringUtils conserva 716 y ArrayUtils 314). Se conservan ambas versiones para hacer visible la diferencia | `E2_CORREGIDO_commons-lang.csv` | Vigente |
+| D11 | 2026-10-28 | **Control de versiones:** rama `sprint2-e2` para el trabajo del Sprint 2; `main` intacta con el G1A etiquetado (`sprint1-g1a-v2`); **conventional commits** (`feat`, `fix`, `docs`, `chore`) | Aísla el trabajo en curso del estado calificado; el historial queda legible y auditable, como pide el sprint ("conservar código y registrar comandos, versiones, commits y fecha") | Historial de la rama `sprint2-e2` en GitHub | Vigente |
 
 ---
 
@@ -53,13 +55,15 @@ posteriores (registrados aquí para no perderlos):
 | H4 | 2026-09-26 | El commit `c9ff6aa44` concentra 54 de 93 refactorings, pero es un fix funcional (no pago de deuda) | El conteo de refactorings requiere contexto; refactoring ≠ pago de deuda técnica |
 | H5 | 2026-10-14 | F020 (ByteSupplier) no existe en el árbol de la release 3.18.0: es un **artefacto no nacido** en ese corte | Debe excluirse del fold de entrenamiento; una observación sin pasado no es válida |
 | H6 | 2026-10-14 | El `artifact_id` difiere entre `D3_ARTIFACT_IDENTITY.csv` y `D3_EVOLUTION_DATASET.csv` (coinciden solo en F001/F002) | Anclar la llave de integración al `path` (decisión D7) para no romper el join E1+E2+E3 |
-| H7 | 2026-10-14 | `git log --follow` rastreó a F020 (nacido en 2025) hasta el commit fundacional de **2002** por similitud de contenido | La verificación por tag (decisión D9) acota la sobre-atribución de identidad |
-| H8 | 2026-10-14 | El repositorio figura como **público** en GitHub, pese a la decisión D6 (repo privado por CIMPS) | Revisar la configuración de visibilidad del repositorio antes de difundir |
+| H7 | 2026-10-14 | `git log --follow` rastreó a F020 (nacido en 2025) hasta el commit fundacional de **2002** por similitud de contenido | La verificación por tag (decisión D9) acota la sobre-atribución de identidad; cuantificado después en H9 |
+| H8 | 2026-10-14 | El repositorio figuraba como **público** en GitHub, pese a la decisión D6 (repo privado por CIMPS) | **Resuelto (2026-10-28):** el repositorio se puso en privado |
+| H9 | 2026-10-28 | **Cuantificación de la sobre-atribución de `git log --follow` — hallazgo compartido con Y. Roa Moreno (H-04 en su bitácora).** Al cruzar E2 con la evidencia de co-change (E3), la diferencia `prior_commits − (commits reales)` es ≠ 0 en **10 de 30 archivos**. Caso extremo: ByteSupplier (F020) reportaba 32 commits pero su historia real es **1** (`--follow` saltó al `LICENSE` y a archivos de prueba como `GenericParent`). El **estrato medio** quedó contaminado: varios archivos "medios" (≈32 commits) eran en realidad "tranquilos" | Se adopta `--follow -M90%` (D10), que corrige los 10 archivos y mantiene los renames legítimos; se conservan ambos valores en `E2_CORREGIDO_commons-lang.csv`. Afecta la selección estratificada (D3) y se declara como **limitación** del dataset. Verificado en vivo con `git log --follow -M90%` sobre commons-lang |
 
 ---
 
 ## 4. Nota
 
 Este documento se seguirá actualizando en los próximos sprints. Las fechas del Sprint 1 corresponden a
-los commits del repositorio; las del Sprint 2 (`2026-10-14`) corresponden a la sesión de validación
-longitudinal (auditoría, snapshots y separación temporal).
+los commits del repositorio; las del Sprint 2 corresponden a las sesiones de validación longitudinal:
+`2026-10-14` (auditoría, snapshots y separación temporal) y `2026-10-28` (corrección de linaje H-04 y
+puesta en orden del control de versiones).
