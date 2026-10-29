@@ -21,6 +21,7 @@
 | E4 | 2026-09-21 | En D2, `first_commit_date` de commons-lang aparecía como 2022 | Error de tecleo al llenar el CSV manualmente (2022 en vez de 2002) | Corregido a **2002-07-19**, verificado contra `git log` y contra D3 | `D2_CIMPS8_OBSERVABILIDAD.csv` corregido | Resuelto |
 | E5 | 2026-09-26 | El `README.md` reflejaba solo la POC (días 1–2), quedó desactualizado | Se redactó al inicio y no se actualizó tras completar D3 y D4 | Regenerado con el estado real + versiones reales (Git 2.52.0, Java 17.0.17) | `README.md` (versión actualizada) | Resuelto |
 | E6 | 2026-10-14 | En la auditoría, un comando dio falso "NO EXISTE" para F020 en 3.19.0 | Typo `ccd` al inicio: el `cd` falló y el comando corrió en el repo equivocado (no en commons-lang) | Re-ejecutado usando `git -C repos/commons-lang ...`, que no depende del directorio actual | Salidas comparadas de ambas corridas | Resuelto |
+| E7 | 2026-10-28 | Al correr el E1, `bash` abrió WSL (roto) y luego `python` abrió el stub de la Microsoft Store | Se ejecutó en PowerShell (no Git Bash) y el alias de ejecución de Windows tapaba el Python real | Correr en **Git Bash** y usar el lanzador **`py`** (Python 3.8.10); el análisis quedó cacheado, así que al relanzar brincó a la exportación | Salida del script `run_e1_sonar_commons-lang.sh` | Resuelto |
 
 ---
 
@@ -39,6 +40,7 @@
 | D9 | 2026-10-14 | Control reforzado por **tag** (`git cat-file -e`) además de la invariante por fecha | Detecta artefactos no presentes en el snapshot del corte que la invariante por fecha deja pasar (ver H7) | `D_Separacion_Temporal_Materializada.docx` §6 | Vigente |
 | D10 | 2026-10-28 | Recalcular E2 con **`git log --follow -M90%`** y **documentar ambos valores** (original y corregido), sin sustituir en silencio ni eliminar archivos | El `--follow` por defecto (umbral de similitud 50 %) asigna historia de otros archivos (ver H9); subir el umbral a 90 % corta los saltos falsos **sin perder los renames legítimos** (StringUtils conserva 716 y ArrayUtils 314). Se conservan ambas versiones para hacer visible la diferencia | `E2_CORREGIDO_commons-lang.csv` | Vigente |
 | D11 | 2026-10-28 | **Control de versiones:** rama `sprint2-e2` para el trabajo del Sprint 2; `main` intacta con el G1A etiquetado (`sprint1-g1a-v2`); **conventional commits** (`feat`, `fix`, `docs`, `chore`) | Aísla el trabajo en curso del estado calificado; el historial queda legible y auditable, como pide el sprint ("conservar código y registrar comandos, versiones, commits y fecha") | Historial de la rama `sprint2-e2` en GitHub | Vigente |
+| D12 | 2026-10-28 | **Piloto oficial de la integración = commons-lang; E1 real con SonarQube** | Consensuado con Y. Roa y avalado por el profesor ("el piloto que mejor exprese la información"): commons-lang combina la E2 longitudinal validada (W. Tehuatle) con la E3 de co-change (Y. Roa), y su `decision_time` (2025-11-12 = release 3.20.0) coincide con el snapshot CIMPS. El E1 por archivo se generó con **SonarQube 26.6.0.123539** (misma versión que Y. Roa) sobre el snapshot 3.20.0, reemplazando el E1 provisional (solo LOC) | `INTEGRATED_E1_E2_E3_commons-lang_2025-11-12_mf50.csv` (30 archivos; `keys_e2=30`, `keys_e3=30`, `issues=[]`) + `E1_FILE_METRICS_commons-lang_2025-11-12.csv` | Vigente |
 
 ---
 
@@ -58,6 +60,7 @@ posteriores (registrados aquí para no perderlos):
 | H7 | 2026-10-14 | `git log --follow` rastreó a F020 (nacido en 2025) hasta el commit fundacional de **2002** por similitud de contenido | La verificación por tag (decisión D9) acota la sobre-atribución de identidad; cuantificado después en H9 |
 | H8 | 2026-10-14 | El repositorio figuraba como **público** en GitHub, pese a la decisión D6 (repo privado por CIMPS) | **Resuelto (2026-10-28):** el repositorio se puso en privado |
 | H9 | 2026-10-28 | **Cuantificación de la sobre-atribución de `git log --follow` — hallazgo compartido con Y. Roa Moreno (H-04 en su bitácora).** Al cruzar E2 con la evidencia de co-change (E3), la diferencia `prior_commits − (commits reales)` es ≠ 0 en **10 de 30 archivos**. Caso extremo: ByteSupplier (F020) reportaba 32 commits pero su historia real es **1** (`--follow` saltó al `LICENSE` y a archivos de prueba como `GenericParent`). El **estrato medio** quedó contaminado: varios archivos "medios" (≈32 commits) eran en realidad "tranquilos" | Se adopta `--follow -M90%` (D10), que corrige los 10 archivos y mantiene los renames legítimos; se conservan ambos valores en `E2_CORREGIDO_commons-lang.csv`. Afecta la selección estratificada (D3) y se declara como **limitación** del dataset. Verificado en vivo con `git log --follow -M90%` sobre commons-lang |
+| H10 | 2026-10-28 | La integración E1+E2+E3 cerró **limpia** (`issues=[]`, `keys_e2=30`, `keys_e3=30`): las tres familias empatan por la llave `project + artifact_id + decision_time` sin huecos. E1 real (SonarQube) difiere de CIMPS en los conteos absolutos por la **versión de las reglas**, no por el alcance (totales por archivo consistentes con el instrumento) | La observación común E1+E2+E3 es construible y temporalmente válida; los resultados son **piloto/exploratorios**, no confirmatorios |
 
 ---
 
@@ -65,5 +68,5 @@ posteriores (registrados aquí para no perderlos):
 
 Este documento se seguirá actualizando en los próximos sprints. Las fechas del Sprint 1 corresponden a
 los commits del repositorio; las del Sprint 2 corresponden a las sesiones de validación longitudinal:
-`2026-10-14` (auditoría, snapshots y separación temporal) y `2026-10-28` (corrección de linaje H-04 y
-puesta en orden del control de versiones).
+`2026-10-14` (auditoría, snapshots y separación temporal), `2026-10-28` (corrección de linaje H-04,
+control de versiones y **generación del E1 real con SonarQube + integración E1+E2+E3**).
