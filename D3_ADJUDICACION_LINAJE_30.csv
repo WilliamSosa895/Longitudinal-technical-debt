@@ -1,0 +1,31 @@
+artifact_id,path,commits_follow50,commits_follow90_corr,commits_nofollow,dif_50_90,afectado_linaje,renames_R100,origin_commit_date,veredicto
+F001,src/main/java/org/apache/commons/lang3/StringUtils.java,716,716,509,0,no,2,fc5c081e2|2010-01-03,sin cambio de linaje
+F002,src/main/java/org/apache/commons/lang3/ArrayUtils.java,314,314,227,0,no,2,fc5c081e2|2010-01-03,sin cambio de linaje
+F003,src/main/java/org/apache/commons/lang3/ClassUtils.java,208,208,133,0,no,2,fc5c081e2|2010-01-03,sin cambio de linaje
+F004,src/main/java/org/apache/commons/lang3/math/NumberUtils.java,185,175,132,10,SI,2,fc5c081e2|2010-01-03,renames R100 reales (2); corregido=175 (conserva migracion legitima)
+F005,src/main/java/org/apache/commons/lang3/ObjectUtils.java,185,185,136,0,no,2,fc5c081e2|2010-01-03,sin cambio de linaje
+F006,src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java,175,175,96,0,no,2,fc5c081e2|2010-01-03,sin cambio de linaje
+F007,src/main/java/org/apache/commons/lang3/SystemUtils.java,174,174,119,0,no,2,fc5c081e2|2010-01-03,sin cambio de linaje
+F008,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,171,171,172,0,no,0,cc340ad2e|2012-01-26,sin cambio de linaje
+F009,src/main/java/org/apache/commons/lang3/time/DateUtils.java,171,171,104,0,no,2,fc5c081e2|2010-01-03,sin cambio de linaje
+F010,src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java,162,104,104,58,SI,0,cc340ad2e|2012-01-26,nacido-en-lugar; --follow(50%) sobre-atribuyo 58; corregido=104
+F011,src/main/java/org/apache/commons/lang3/time/TimeZones.java,33,10,10,23,SI,0,fd60085a2|2017-10-09,nacido-en-lugar; --follow(50%) sobre-atribuyo 23; corregido=10
+F012,src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java,33,33,26,0,no,2,fc5c081e2|2010-01-03,sin cambio de linaje
+F013,src/main/java/org/apache/commons/lang3/Streams.java,33,33,34,0,no,0,2ea44b2ad|2020-01-26,sin cambio de linaje
+F014,src/main/java/org/apache/commons/lang3/tuple/MutableTriple.java,32,22,22,10,SI,0,b4011cf02|2011-11-24,nacido-en-lugar; --follow(50%) sobre-atribuyo 10; corregido=22
+F015,src/main/java/org/apache/commons/lang3/text/translate/OctalUnescaper.java,32,22,22,10,SI,0,345b4836f|2011-01-17,nacido-en-lugar; --follow(50%) sobre-atribuyo 10; corregido=22
+F016,src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,32,29,22,3,SI,2,fc5c081e2|2010-01-03,renames R100 reales (2); corregido=29 (conserva migracion legitima)
+F017,src/main/java/org/apache/commons/lang3/mutable/Mutable.java,32,25,13,7,SI,2,fc5c081e2|2010-01-03,renames R100 reales (2); corregido=25 (conserva migracion legitima)
+F018,src/main/java/org/apache/commons/lang3/function/IntToCharFunction.java,32,3,3,29,SI,0,3f9422aec|2021-08-27,nacido-en-lugar; --follow(50%) sobre-atribuyo 29; corregido=3
+F019,src/main/java/org/apache/commons/lang3/function/FailableShortSupplier.java,32,5,5,27,SI,0,45bec219d|2020-12-24,nacido-en-lugar; --follow(50%) sobre-atribuyo 27; corregido=5
+F020,src/main/java/org/apache/commons/lang3/function/ByteSupplier.java,32,1,1,31,SI,0,e56ce0fed|2025-09-09,nacido-en-lugar; --follow(50%) sobre-atribuyo 31; corregido=1
+F021,src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java,5,5,5,0,no,0,5afd54ce6|2021-08-29,sin cambio de linaje
+F022,src/main/java/org/apache/commons/lang3/compare/ObjectToStringComparator.java,5,5,5,0,no,0,1df9bc702|2020-01-01,sin cambio de linaje
+F023,src/main/java/org/apache/commons/lang3/CachedRandomBits.java,5,5,5,0,no,0,f382d61a0|2024-07-06,sin cambio de linaje
+F024,src/main/java/org/apache/commons/lang3/function/Predicates.java,4,4,4,0,no,0,b046e22fa|2025-01-05,sin cambio de linaje
+F025,src/main/java/org/apache/commons/lang3/concurrent/UncheckedFuture.java,4,4,4,0,no,0,5afd54ce6|2021-08-29,sin cambio de linaje
+F026,src/main/java/org/apache/commons/lang3/DoubleRange.java,4,4,4,0,no,0,57ddce119|2022-10-17,sin cambio de linaje
+F027,src/main/java/org/apache/commons/lang3/Charsets.java,4,4,4,0,no,0,e5e1339e4|2019-06-03,sin cambio de linaje
+F028,src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java,3,2,2,1,SI,0,34a85e743|2021-08-30,nacido-en-lugar; --follow(50%) sobre-atribuyo 1; corregido=2
+F029,src/main/java/org/apache/commons/lang3/AppendableJoiner.java,3,3,3,0,no,0,e5aa6d084|2024-07-11,sin cambio de linaje
+F030,src/main/java/org/apache/commons/lang3/util/IterableStringTokenizer.java,2,2,2,0,no,0,25f7d8517|2025-01-19,sin cambio de linaje

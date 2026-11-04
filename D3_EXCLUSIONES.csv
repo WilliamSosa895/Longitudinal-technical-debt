@@ -1,0 +1,2 @@
+artifact_id,path,fold_cut,cut_date,snapshot_sha,motivo,detalle
+F020,src/main/java/org/apache/commons/lang3/function/ByteSupplier.java,TRAIN 3.18.0,2025-07-06,5b59487808d0b86a94ad7a1ebd4c200e09b7be09,NO_NACIDO,no existe en rel/commons-lang-3.18.0; excluido (observacion sin pasado)
