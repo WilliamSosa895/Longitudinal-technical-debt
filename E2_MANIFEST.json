@@ -1,0 +1,22 @@
+{
+  "componente": "E2 - evolucion historica (commons-lang)",
+  "estudiante": "William Tehuatle Sosa",
+  "fecha_ejecucion": "2026-11-04",
+  "repo_analizado": "apache/commons-lang (tags anotados oficiales)",
+  "decision_time": "2025-11-12",
+  "decision_sha": "598dfc163b8b410fb3bb8794521206ec8dcec82a",
+  "snapshots": {
+    "3.18.0": {"fecha": "2025-07-06", "sha": "5b59487808d0b86a94ad7a1ebd4c200e09b7be09", "rol": "corte TRAIN (features)"},
+    "3.19.0": {"fecha": "2025-09-19", "sha": "3d1eb7718a79d18cc2ab57e7ab3b894426ec7c2f", "rol": "corte TEST (features) / fin ventana label TRAIN"},
+    "3.20.0": {"fecha": "2025-11-12", "sha": "598dfc163b8b410fb3bb8794521206ec8dcec82a", "rol": "decision_time / fin ventana label TEST"}
+  },
+  "regla_linaje": "git log --follow -M90% (conserva renames R100 legitimos; corta matches 50-89% espurios)",
+  "regla_temporalidad": "features reachable desde el SHA del corte; etiqueta en (corte, siguiente_release]; born-check por 'git cat-file -e rel/<tag>:<path>'",
+  "comando_reproduccion": "py validate_e2.py repos/commons-lang D3_SELECCION_30.txt .",
+  "resultados": {
+    "afectados_linaje": "11/30 (F004,F010,F011,F014,F015,F016,F017,F018,F019,F020,F028)",
+    "fold_train": "29 filas, invariante 29/29 OK, excluido F020 (NO_NACIDO en 3.18.0)",
+    "fold_test": "30 filas, invariante 30/30 OK",
+    "identidad": "numeracion canonica anclada al path (F003=ClassUtils); verificacion --follow independiente"
+  }
+}
