@@ -1,55 +1,56 @@
 artifact_id,commit,timestamp,path,change_type,rename_from,rename_to,evidence,ambiguity
-F001,6627f7ad8,2002-07-19,src/java/org/apache/commons/lang/StringUtils.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F001,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/StringUtils.java,renamed,src/java/org/apache/commons/lang/StringUtils.java,src/java/org/apache/commons/lang3/StringUtils.java,R100 en --follow -M90% --name-status,no
-F001,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/StringUtils.java,renamed,src/java/org/apache/commons/lang3/StringUtils.java,src/main/java/org/apache/commons/lang3/StringUtils.java,R100 en --follow -M90% --name-status,no
-F002,d31f3d3f8,2002-10-13,src/java/org/apache/commons/lang/ArrayUtils.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F002,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/ArrayUtils.java,renamed,src/java/org/apache/commons/lang/ArrayUtils.java,src/java/org/apache/commons/lang3/ArrayUtils.java,R100 en --follow -M90% --name-status,no
-F002,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/ArrayUtils.java,renamed,src/java/org/apache/commons/lang3/ArrayUtils.java,src/main/java/org/apache/commons/lang3/ArrayUtils.java,R100 en --follow -M90% --name-status,no
-F003,f7c60dc9f,2002-08-14,src/java/org/apache/commons/lang/ClassUtils.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F003,870097e4b,2002-10-24,src/java/org/apache/commons/lang/ClassUtils.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F003,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/ClassUtils.java,renamed,src/java/org/apache/commons/lang/ClassUtils.java,src/java/org/apache/commons/lang3/ClassUtils.java,R100 en --follow -M90% --name-status,no
-F003,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/ClassUtils.java,renamed,src/java/org/apache/commons/lang3/ClassUtils.java,src/main/java/org/apache/commons/lang3/ClassUtils.java,R100 en --follow -M90% --name-status,no
-F004,2d06a7ce8,2003-06-24,src/java/org/apache/commons/lang/math/NumberUtils.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F004,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/math/NumberUtils.java,renamed,src/java/org/apache/commons/lang/math/NumberUtils.java,src/java/org/apache/commons/lang3/math/NumberUtils.java,R100 en --follow -M90% --name-status,no
-F004,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/math/NumberUtils.java,renamed,src/java/org/apache/commons/lang3/math/NumberUtils.java,src/main/java/org/apache/commons/lang3/math/NumberUtils.java,R100 en --follow -M90% --name-status,no
-F005,6627f7ad8,2002-07-19,src/java/org/apache/commons/lang/ObjectUtils.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F005,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/ObjectUtils.java,renamed,src/java/org/apache/commons/lang/ObjectUtils.java,src/java/org/apache/commons/lang3/ObjectUtils.java,R100 en --follow -M90% --name-status,no
-F005,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/ObjectUtils.java,renamed,src/java/org/apache/commons/lang3/ObjectUtils.java,src/main/java/org/apache/commons/lang3/ObjectUtils.java,R100 en --follow -M90% --name-status,no
-F006,6053ce341,2002-08-13,src/java/org/apache/commons/lang/exception/ExceptionUtils.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F006,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/exception/ExceptionUtils.java,renamed,src/java/org/apache/commons/lang/exception/ExceptionUtils.java,src/java/org/apache/commons/lang3/exception/ExceptionUtils.java,R100 en --follow -M90% --name-status,no
-F006,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java,renamed,src/java/org/apache/commons/lang3/exception/ExceptionUtils.java,src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java,R100 en --follow -M90% --name-status,no
-F007,155943d34,2002-08-22,src/java/org/apache/commons/lang/SystemUtils.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F007,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/SystemUtils.java,renamed,src/java/org/apache/commons/lang/SystemUtils.java,src/java/org/apache/commons/lang3/SystemUtils.java,R100 en --follow -M90% --name-status,no
-F007,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/SystemUtils.java,renamed,src/java/org/apache/commons/lang3/SystemUtils.java,src/main/java/org/apache/commons/lang3/SystemUtils.java,R100 en --follow -M90% --name-status,no
-F008,cc340ad2e,2012-01-26,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F009,26c6a7c28,2002-12-16,src/java/org/apache/commons/lang/DateUtils.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F009,9c4166dbb,2002-12-18,src/java/org/apache/commons/lang/time/DateUtils.java,renamed,src/java/org/apache/commons/lang/DateUtils.java,src/java/org/apache/commons/lang/time/DateUtils.java,R096 en --follow -M90% --name-status,no
-F009,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/time/DateUtils.java,renamed,src/java/org/apache/commons/lang/time/DateUtils.java,src/java/org/apache/commons/lang3/time/DateUtils.java,R100 en --follow -M90% --name-status,no
-F009,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/time/DateUtils.java,renamed,src/java/org/apache/commons/lang3/time/DateUtils.java,src/main/java/org/apache/commons/lang3/time/DateUtils.java,R100 en --follow -M90% --name-status,no
-F010,cc340ad2e,2012-01-26,src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F011,fd60085a2,2017-10-09,src/main/java/org/apache/commons/lang3/time/TimeZones.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F012,c40412197,2009-06-23,src/java/org/apache/commons/lang/text/translate/EntityArrays.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F012,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/text/translate/EntityArrays.java,renamed,src/java/org/apache/commons/lang/text/translate/EntityArrays.java,src/java/org/apache/commons/lang3/text/translate/EntityArrays.java,R100 en --follow -M90% --name-status,no
-F012,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java,renamed,src/java/org/apache/commons/lang3/text/translate/EntityArrays.java,src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java,R100 en --follow -M90% --name-status,no
-F013,2ea44b2ad,2020-01-26,src/main/java/org/apache/commons/lang3/Streams.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F014,b4011cf02,2011-11-24,src/main/java/org/apache/commons/lang3/tuple/MutableTriple.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F015,345b4836f,2011-01-17,src/main/java/org/apache/commons/lang3/text/translate/OctalUnescaper.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F016,b4bdbdfe9,2009-06-25,src/java/org/apache/commons/lang/text/translate/NumericEntityEscaper.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F016,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,renamed,src/java/org/apache/commons/lang/text/translate/NumericEntityEscaper.java,src/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,R100 en --follow -M90% --name-status,no
-F016,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,renamed,src/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,R100 en --follow -M90% --name-status,no
-F017,c0f14e226,2004-06-11,src/java/org/apache/commons/lang/mutable/Mutable.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F017,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/mutable/Mutable.java,renamed,src/java/org/apache/commons/lang/mutable/Mutable.java,src/java/org/apache/commons/lang3/mutable/Mutable.java,R100 en --follow -M90% --name-status,no
-F017,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/mutable/Mutable.java,renamed,src/java/org/apache/commons/lang3/mutable/Mutable.java,src/main/java/org/apache/commons/lang3/mutable/Mutable.java,R100 en --follow -M90% --name-status,no
-F018,3f9422aec,2021-08-27,src/main/java/org/apache/commons/lang3/function/IntToCharFunction.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F019,45bec219d,2020-12-24,src/main/java/org/apache/commons/lang3/function/FailableShortSupplier.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F020,e56ce0fed,2025-09-09,src/main/java/org/apache/commons/lang3/function/ByteSupplier.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F021,5afd54ce6,2021-08-29,src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F022,1df9bc702,2020-01-01,src/main/java/org/apache/commons/lang3/compare/ObjectToStringComparator.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F023,f382d61a0,2024-07-06,src/main/java/org/apache/commons/lang3/CachedRandomBits.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F024,b046e22fa,2025-01-05,src/main/java/org/apache/commons/lang3/function/Predicates.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F025,5afd54ce6,2021-08-29,src/main/java/org/apache/commons/lang3/concurrent/UncheckedFuture.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F026,57ddce119,2022-10-17,src/main/java/org/apache/commons/lang3/DoubleRange.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F027,e5e1339e4,2019-06-03,src/main/java/org/apache/commons/lang3/Charsets.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F028,34a85e743,2021-08-30,src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F029,e5aa6d084,2024-07-11,src/main/java/org/apache/commons/lang3/AppendableJoiner.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
-F030,25f7d8517,2025-01-19,src/main/java/org/apache/commons/lang3/util/IterableStringTokenizer.java,added,,,"nacimiento (diff-filter=A, --follow -M90%)",no
+F001,6627f7ad8,2002-07-19,src/java/org/apache/commons/lang/StringUtils.java,added,,,nacimiento: Initial copy from jakarta-commons-sandbox,no
+F001,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/StringUtils.java,renamed,src/java/org/apache/commons/lang/StringUtils.java,src/java/org/apache/commons/lang3/StringUtils.java,R100: Changing directory name from lang to lang3. Build ,no
+F001,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/StringUtils.java,renamed,src/java/org/apache/commons/lang3/StringUtils.java,src/main/java/org/apache/commons/lang3/StringUtils.java,R100: Move main source to src/main/java,no
+F002,d31f3d3f8,2002-10-13,src/java/org/apache/commons/lang/ArrayUtils.java,added,,,"nacimiento: Initial version of ArrayUtils, includes toMap",no
+F002,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/ArrayUtils.java,renamed,src/java/org/apache/commons/lang/ArrayUtils.java,src/java/org/apache/commons/lang3/ArrayUtils.java,R100: Changing directory name from lang to lang3. Build ,no
+F002,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/ArrayUtils.java,renamed,src/java/org/apache/commons/lang3/ArrayUtils.java,src/main/java/org/apache/commons/lang3/ArrayUtils.java,R100: Move main source to src/main/java,no
+F003,f7c60dc9f,2002-08-14,src/java/org/apache/commons/lang/ClassUtils.java,added,,,nacimiento: Checked back in for consideration in 1.0,no
+F003,318994915,2002-09-06,src/java/org/apache/commons/lang/ClassUtils.java,deleted,,,eliminacion: Removed to sandbox ready for 1.0 release,no
+F003,870097e4b,2002-10-24,src/java/org/apache/commons/lang/ClassUtils.java,added,,,nacimiento: Initial checkin of reflection code (not all working),no
+F003,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/ClassUtils.java,renamed,src/java/org/apache/commons/lang/ClassUtils.java,src/java/org/apache/commons/lang3/ClassUtils.java,R100: Changing directory name from lang to lang3. Build ,no
+F003,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/ClassUtils.java,renamed,src/java/org/apache/commons/lang3/ClassUtils.java,src/main/java/org/apache/commons/lang3/ClassUtils.java,R100: Move main source to src/main/java,no
+F004,2d06a7ce8,2003-06-24,src/java/org/apache/commons/lang/math/NumberUtils.java,added,,,nacimiento: NumberUtils moved to math subpackage,no
+F004,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/math/NumberUtils.java,renamed,src/java/org/apache/commons/lang/math/NumberUtils.java,src/java/org/apache/commons/lang3/math/NumberUtils.java,R100: Changing directory name from lang to lang3. Build ,no
+F004,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/math/NumberUtils.java,renamed,src/java/org/apache/commons/lang3/math/NumberUtils.java,src/main/java/org/apache/commons/lang3/math/NumberUtils.java,R100: Move main source to src/main/java,no
+F005,6627f7ad8,2002-07-19,src/java/org/apache/commons/lang/ObjectUtils.java,added,,,nacimiento: Initial copy from jakarta-commons-sandbox,no
+F005,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/ObjectUtils.java,renamed,src/java/org/apache/commons/lang/ObjectUtils.java,src/java/org/apache/commons/lang3/ObjectUtils.java,R100: Changing directory name from lang to lang3. Build ,no
+F005,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/ObjectUtils.java,renamed,src/java/org/apache/commons/lang3/ObjectUtils.java,src/main/java/org/apache/commons/lang3/ObjectUtils.java,R100: Move main source to src/main/java,no
+F006,6053ce341,2002-08-13,src/java/org/apache/commons/lang/exception/ExceptionUtils.java,added,,,"nacimiento: Added a utility for examining Throwable objects, as proposed",no
+F006,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/exception/ExceptionUtils.java,renamed,src/java/org/apache/commons/lang/exception/ExceptionUtils.java,src/java/org/apache/commons/lang3/exception/ExceptionUtils.java,R100: Changing directory name from lang to lang3. Build ,no
+F006,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java,renamed,src/java/org/apache/commons/lang3/exception/ExceptionUtils.java,src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java,R100: Move main source to src/main/java,no
+F007,155943d34,2002-08-22,src/java/org/apache/commons/lang/SystemUtils.java,added,,,nacimiento: Initial version of SystemUtils for system constants,no
+F007,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/SystemUtils.java,renamed,src/java/org/apache/commons/lang/SystemUtils.java,src/java/org/apache/commons/lang3/SystemUtils.java,R100: Changing directory name from lang to lang3. Build ,no
+F007,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/SystemUtils.java,renamed,src/java/org/apache/commons/lang3/SystemUtils.java,src/main/java/org/apache/commons/lang3/SystemUtils.java,R100: Move main source to src/main/java,no
+F008,cc340ad2e,2012-01-26,src/main/java/org/apache/commons/lang3/time/FastDateParser.java,added,,,nacimiento: Applying Chas Honton's implementation of DateParser and subs,no
+F009,26c6a7c28,2002-12-16,src/java/org/apache/commons/lang/DateUtils.java,added,,,nacimiento: A DateUtils class from Ant. Still needs lots of thinking etc,no
+F009,9c4166dbb,2002-12-18,src/java/org/apache/commons/lang/time/DateUtils.java,renamed,src/java/org/apache/commons/lang/DateUtils.java,src/java/org/apache/commons/lang/time/DateUtils.java,R096: Create time subpackage,no
+F009,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/time/DateUtils.java,renamed,src/java/org/apache/commons/lang/time/DateUtils.java,src/java/org/apache/commons/lang3/time/DateUtils.java,R100: Changing directory name from lang to lang3. Build ,no
+F009,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/time/DateUtils.java,renamed,src/java/org/apache/commons/lang3/time/DateUtils.java,src/main/java/org/apache/commons/lang3/time/DateUtils.java,R100: Move main source to src/main/java,no
+F010,cc340ad2e,2012-01-26,src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java,added,,,nacimiento: Applying Chas Honton's implementation of DateParser and subs,no
+F011,fd60085a2,2017-10-09,src/main/java/org/apache/commons/lang3/time/TimeZones.java,added,,,"nacimiento: Refactor ""GMT"" magic string.",no
+F012,c40412197,2009-06-23,src/java/org/apache/commons/lang/text/translate/EntityArrays.java,added,,,nacimiento: Committing a rewrite of StringEscapeUtils guts - LANG-505. E,no
+F012,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/text/translate/EntityArrays.java,renamed,src/java/org/apache/commons/lang/text/translate/EntityArrays.java,src/java/org/apache/commons/lang3/text/translate/EntityArrays.java,R100: Changing directory name from lang to lang3. Build ,no
+F012,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java,renamed,src/java/org/apache/commons/lang3/text/translate/EntityArrays.java,src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java,R100: Move main source to src/main/java,no
+F013,2ea44b2ad,2020-01-26,src/main/java/org/apache/commons/lang3/Streams.java,added,,,nacimiento: - Added the Streams class. - Added Functions.stream() as an ,no
+F014,b4011cf02,2011-11-24,src/main/java/org/apache/commons/lang3/tuple/MutableTriple.java,added,,,nacimiento: Adding Henning's GitHub pull request with a Triple implement,no
+F015,345b4836f,2011-01-17,src/main/java/org/apache/commons/lang3/text/translate/OctalUnescaper.java,added,,,nacimiento: Adding an OctalUnescaper to handle Java's support of 1->377 ,no
+F016,b4bdbdfe9,2009-06-25,src/java/org/apache/commons/lang/text/translate/NumericEntityEscaper.java,added,,,nacimiento: Replacing the NonAsciiAsNumericEntity class with a more gene,no
+F016,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,renamed,src/java/org/apache/commons/lang/text/translate/NumericEntityEscaper.java,src/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,R100: Changing directory name from lang to lang3. Build ,no
+F016,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,renamed,src/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java,R100: Move main source to src/main/java,no
+F017,c0f14e226,2004-06-11,src/java/org/apache/commons/lang/mutable/Mutable.java,added,,,nacimiento: Adding initial crack at mutables.,no
+F017,debc02c6d,2009-12-10,src/java/org/apache/commons/lang3/mutable/Mutable.java,renamed,src/java/org/apache/commons/lang/mutable/Mutable.java,src/java/org/apache/commons/lang3/mutable/Mutable.java,R100: Changing directory name from lang to lang3. Build ,no
+F017,fc5c081e2,2010-01-03,src/main/java/org/apache/commons/lang3/mutable/Mutable.java,renamed,src/java/org/apache/commons/lang3/mutable/Mutable.java,src/main/java/org/apache/commons/lang3/mutable/Mutable.java,R100: Move main source to src/main/java,no
+F018,3f9422aec,2021-08-27,src/main/java/org/apache/commons/lang3/function/IntToCharFunction.java,added,,,nacimiento: Add IntToCharFunction.,no
+F019,45bec219d,2020-12-24,src/main/java/org/apache/commons/lang3/function/FailableShortSupplier.java,added,,,"nacimiento: Add FailableShortSupplier, handy for JDBC APIs.",no
+F020,e56ce0fed,2025-09-09,src/main/java/org/apache/commons/lang3/function/ByteSupplier.java,added,,,nacimiento: Add ByteSupplier,no
+F021,5afd54ce6,2021-08-29,src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java,added,,,nacimiento: Add UncheckedFuture.,no
+F022,1df9bc702,2020-01-01,src/main/java/org/apache/commons/lang3/compare/ObjectToStringComparator.java,added,,,nacimiento: [LANG-1509] Add ObjectToStringComparator. (#483),no
+F023,f382d61a0,2024-07-06,src/main/java/org/apache/commons/lang3/CachedRandomBits.java,added,,,nacimiento: Reimplement RandomStringUtils on top of SecureRandom#getInst,no
+F024,b046e22fa,2025-01-05,src/main/java/org/apache/commons/lang3/function/Predicates.java,added,,,nacimiento: Add Predicates,no
+F025,5afd54ce6,2021-08-29,src/main/java/org/apache/commons/lang3/concurrent/UncheckedFuture.java,added,,,nacimiento: Add UncheckedFuture.,no
+F026,57ddce119,2022-10-17,src/main/java/org/apache/commons/lang3/DoubleRange.java,added,,,"nacimiento: Add NumberRange, DoubleRange, IntegerRange, LongRange.",no
+F027,e5e1339e4,2019-06-03,src/main/java/org/apache/commons/lang3/Charsets.java,added,,,nacimiento: [LANG-1461] Add null-safe StringUtils APIs to wrap String#ge,no
+F028,34a85e743,2021-08-30,src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java,added,,,nacimiento: Refactorings; reuse UncheckedFuture.,no
+F029,e5aa6d084,2024-07-11,src/main/java/org/apache/commons/lang3/AppendableJoiner.java,added,,,nacimiento: Refactor string joining into AppendableJoiner (#1244),no
+F030,25f7d8517,2025-01-19,src/main/java/org/apache/commons/lang3/util/IterableStringTokenizer.java,added,,,nacimiento: Add IterableStringTokenizer,no

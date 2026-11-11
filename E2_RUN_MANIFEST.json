@@ -1,0 +1,47 @@
+{
+  "componente": "E2 commons-lang",
+  "decision_time": "2025-11-12",
+  "decision_sha": "598dfc163b8b410fb3bb8794521206ec8dcec82a",
+  "snapshots": {
+    "3.18.0": {
+      "fecha": "2025-07-06",
+      "sha": "5b59487808d0b86a94ad7a1ebd4c200e09b7be09"
+    },
+    "3.19.0": {
+      "fecha": "2025-09-19",
+      "sha": "3d1eb7718a79d18cc2ab57e7ab3b894426ec7c2f"
+    },
+    "3.20.0": {
+      "fecha": "2025-11-12",
+      "sha": "598dfc163b8b410fb3bb8794521206ec8dcec82a"
+    }
+  },
+  "regla_linaje": "git log --follow -M90%",
+  "afectados_linaje": [
+    "F004",
+    "F010",
+    "F011",
+    "F014",
+    "F015",
+    "F016",
+    "F017",
+    "F018",
+    "F019",
+    "F020",
+    "F028"
+  ],
+  "train_filas": 29,
+  "test_filas": 30,
+  "excluidos": [
+    "F020"
+  ],
+  "salidas": {
+    "D3_ADJUDICACION_LINAJE_30.csv": "5c99f7671f07ef51",
+    "D3_ARTIFACT_IDENTITY_CORREGIDO.csv": "0bea7a1bd6e6bff1",
+    "D3_EVOLUTION_DATASET_CORREGIDO_commons-lang.csv": "a106fb70e0c18c1b",
+    "D3_FOLD_TRAIN_CORREGIDO.csv": "976518356cb04192",
+    "D3_FOLD_TEST_CORREGIDO.csv": "6107a61cb6e6a190",
+    "D3_EXCLUSIONES.csv": "ba68c6f3c7dca6a4",
+    "D3_ELEGIBILIDAD_ASOF.csv": "3c7d68e35b049788"
+  }
+}
